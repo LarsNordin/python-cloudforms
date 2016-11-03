@@ -1,18 +1,18 @@
 '''Module setup'''
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 setup(
     name='Cloudforms',
     version='0.1.1',
     install_requires=[
-        "requests"
+        'requests',
     ],
     description='Cloudforms (ManageIQ) RESTful API Client',
     url='http://github.com/01000101',
     author='Joshua Cornutt',
     author_email='jcornutt@gmail.com',
-    packages=['Cloudforms'],
+    packages=find_packages(),
     classifiers=[
         'Intended Audience :: Developers',
         'Natural Language :: English',
